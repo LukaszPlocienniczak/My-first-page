@@ -68,6 +68,7 @@ button[type=button]{
     margin: 0 auto;
     width: 1068px;
     height: 310px;
+    position: relative;
 }
 header {
     width: 100%;
@@ -103,7 +104,7 @@ header {
     max-height: 0;
     opacity: 0;
     transition: 1s;
-    overflow: hidden;
+
 }
 .sub_nav2{
     position: absolute;
@@ -128,10 +129,10 @@ header {
     overflow: hidden;
 }
 
-#nav1:hover > .sub_nav{
-    max-height: 200px;
-    opacity: 1;
-}
+/*#nav1:hover > .sub_nav{*/
+    /*max-height: 200px;*/
+    /*opacity: 1;*/
+/*}*/
 #nav2:hover > .sub_nav2{
     max-height: 200px;
     opacity: 1;
@@ -217,6 +218,17 @@ span {
     background-size:112%;
 
 }
+.chair__photo2{
+    width: 40%;
+    height: 500px;
+    float: left;
+    background-image: url("../images/orange_chair.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:112%;
+    margin-left: 30px;
+
+}
 
 
 .slider__right__column{
@@ -263,6 +275,8 @@ input[name='sub']{
 
 .column{
    display:inline-block;
+    position: absolute;
+
 }
 .column__left{
     width: 31%;
@@ -270,6 +284,8 @@ input[name='sub']{
     background-image: url("../images/box1_img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    top: 32px;
+    left: 0;
 }
 .column__center{
     width: 31%;
@@ -278,21 +294,33 @@ input[name='sub']{
     background-size: auto;
     background-repeat: no-repeat;
     margin-left: 29px;
+    top: 32px;
+    right: 376px;
 }
 .column__right{
-    width: 30%;
-    height: 226px;
+    width: 32%;
+    height: 255px;
     margin-left: 37px;
     padding-top: 171px;
     margin-top: 0;
-    position: relative;
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
+    top: 32px;
+    right: 0;
+
 }
 .column__back__transparent{
     background: rgba(255,255,255, .3);
     width: 100%;
     height: 60px;
     margin-top: 46%;
+    position: absolute;
+}
+.column__back__transparent2{
+    background: rgba(255,255,255, .3);
+    width: 100%;
+    height: 60px;
+    margin-top: 46%;
+    position: absolute;
 }
 .column__tittle{
     font-weight: 700;
@@ -306,8 +334,8 @@ input[name='sub']{
 }
 .column3__title{
     font-weight: 700;
-    margin-left: 1px;
-    margin-top: -20px;
+    margin-left: 9px;
+    margin-top: -9px;
     position: absolute;
     left: 2px;
     top: -132px;
@@ -324,7 +352,7 @@ input[name='sub']{
     background: rgba(36, 186, 159, .9);
     position: absolute;
     top: 18px;
-    right: 185px;
+    right: 195px;
 }
 .column__text{
     text-align: left;
